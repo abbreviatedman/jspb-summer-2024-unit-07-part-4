@@ -1,4 +1,4 @@
-// # 07.04 - Extra Map/Filter/Find Practice
+// # 07.04 - Extra Map/Filter/Find Practice - START
 
 // 1. Given this array of fruits, use filter-into-map chaining to make jellybeans of fruits with 5 or fewer letters. The expected output is: 'apple jellybean', 'grape jellybean', 'kiwi jellybean', etc.
 
@@ -18,6 +18,7 @@ const fruits = [
   "strawberry",
 ];
 
+
 // 2. Do another filter-into-map chaining to make rollups of fruits that begin with a consonant (so, no 'apple', 'apricot' or 'orange', which begin with a vowel).
 
 // HINT: It is more efficient to check to see if a word does NOT start with one of 5 vowels, as opposed to seeing if it starts with one of 21 consonants.
@@ -35,7 +36,7 @@ const things = [
   "Zone",
 ];
 
-const bigGreens = []; // <-- change this line so that the console log matches the comment
+const bigGreens = []; // <--- replace empty array with your code
 console.log(bigGreens); //> ['Green Coconut', 'Green Lantern', 'Green Monster'];
 
 // **Working With Objects**
@@ -59,18 +60,18 @@ const movies = [
   { name: "Avengers: Endgame", year: 2019, mins: 181 },
 ];
 
-// 4. Use map to get an array of movie objects with a **runTime** property. It should be a string in the following format: "2h 37m"
+// 4. Create an array with only the movies made before 1990.
 
-// 5. Create an array with only the movies made before 1990.
+// 5. Create an array with only the names (i.e., it should contain strings, not objects), and only for movies shorter than 2 hours.
 
-// 6. Create an array with only the names (i.e., it should contain strings, not objects), and only for movies shorter than 2 hours.
+// 6. Use **.find()** to create a reference to the movie "Forrest Gump" .
 
-// 7. Create an array that holds descriptions in the following format: '[movie title] came out in [year it was released]. It runs for [run time].' For example: "Black Panther was released in 2018. It runs for 2 hours and 14 minutes." It should correctly deal with singular/plural issues—"Avengers: Endgame" should say "3 hours and 1 minute" (not "minutes") and "Casablanca" should say "1 hour and 42 minutes" (not "hours").
+// 7. Use **.find()** to create a reference to the movie released in 1962.
 
-// 8. Use **.find()** to create a reference to the movie "Forrest Gump" .
+// 8. Use **.find()** to create a reference to the first movie over 2 hours long.
 
-// 9. Use **.find()** to create a reference to the movie released in 1962.
+// 9. Use **.findIndex()** to find the index for the movie "Beverly Hills Cop". Use that index to splice it out of the array.
 
-// 10. Use **.find()** to create a reference to the first movie over 2 hours long.
+// 10. Create an array that holds descriptions in the following format: '[movie title] came out in [year it was released]. It runs for [run time].' For example: "Black Panther was released in 2018. It runs for 2 hours and 14 minutes." It should correctly deal with singular/plural issues—"Avengers: Endgame" should say "3 hours and 1 minute" (not "minutes") and "Casablanca" should say "1 hour and 42 minutes" (not "hours").
 
-// 11. Use **.findIndex()** to find the index for the movie "Beverly Hills Cop". Use that index to splice it out of the array.
+// 11. Use map to get an array of movie objects with a **runTime** property. It should be a string in the following format: "2h 37m". **HINT**: you're going to have to create new objects and return those within the map.
